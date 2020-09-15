@@ -1,9 +1,9 @@
 class Conta (val numeroConta:Int,var saldo: Double,val titular: Cliente) {
-    fun deposito(valor: Double){
+    fun depositar(valor: Double){
         saldo += valor
         println("Deposito, valor atualizado "+saldo)
     }
-    fun saque(valor: Double){
+    fun sacar(valor: Double){
         if(saldo >= valor){
             saldo -= valor
             println("Saque, valor atualizado "+saldo)
