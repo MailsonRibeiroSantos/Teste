@@ -1,0 +1,16 @@
+fun main(){
+    var atleta1: Atleta = Atleta("Carlos",50,40)
+    var atleta2: Atleta = Atleta("Pedro",60,80)
+    var prova1: Prova =  Prova(20,40)
+    var prova2: Prova =  Prova(40,40)
+    var prova3: Prova =  Prova(30,15)
+    var prova4: Prova =  Prova(20,100)
+    var prova5: Prova =  Prova(16,40)
+    var prova6: Prova =  Prova(70,40)
+    println("É possível realizar a primeira prova ${prova1.realizarProva(atleta1)}")
+    println("É possível realizar a segunda prova ${prova2.realizarProva(atleta1)}")
+    println("É possível realizar a terceira prova ${prova3.realizarProva(atleta1)}")
+    println("É possível realizar a quarta prova ${prova4.realizarProva(atleta2)}")
+    println("É possível realizar a quinta prova ${prova5.realizarProva(atleta2)}")
+    println("É possível realizar a sexta prova ${prova6.realizarProva(atleta2)}")
+}
