@@ -1,11 +1,9 @@
 class Concessionaria  {
-        var veiculo: Veiculo? = null
-        var cliente: Cliente? = null
-        var valor: Double = 0.0
+
+    val registroVendas: ArrayList<Venda> = ArrayList<Venda>()
 
    fun registrarVenda( veiculo: Veiculo, cliente: Cliente, valor: Double){
-       this.veiculo = veiculo
-       this.cliente = cliente
-       this.valor = valor
+        var venda = Venda(cliente,veiculo,valor)
+        registroVendas.add(venda)
     }
 }
